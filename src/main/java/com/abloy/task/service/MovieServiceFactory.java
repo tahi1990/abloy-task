@@ -6,6 +6,11 @@ import java.util.Map;
 import java.util.Set;
 import org.springframework.stereotype.Component;
 
+/**
+ * Movie Service Factory based on Strategy pattern
+ *
+ * @author tahi1990
+ */
 @Component
 public class MovieServiceFactory {
 
