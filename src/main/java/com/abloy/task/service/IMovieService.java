@@ -11,7 +11,7 @@ public interface IMovieService {
     Imdb
   }
 
-  List<Movie> suggest(String genre);
+  List<Movie> suggest(long userId);
 
   ServiceName getServiceName();
 

@@ -7,7 +7,7 @@ import java.util.List;
 public class NetflixService implements IMovieService {
 
   @Override
-  public List<Movie> suggest(String genre) {
+  public List<Movie> suggest(long userId) {
     // TODO: Implement service API here
     return null;
   }

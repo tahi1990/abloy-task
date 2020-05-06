@@ -22,7 +22,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @TestInstance(Lifecycle.PER_CLASS)
 public class AbloyTaskTests {
 
-  private final static String URI = "/movie/suggest";
+  private final static String URI = "/movie/suggest/1";
 
   @Autowired
   private WebApplicationContext wac;
@@ -37,7 +37,7 @@ public class AbloyTaskTests {
   @Test
   public void testSuggestMovie() throws Exception {
 
-    this.mockMvc.perform(MockMvcRequestBuilders.get(URI).param("genre", "action")
+    this.mockMvc.perform(MockMvcRequestBuilders.get(URI)
         .accept(MediaType.APPLICATION_JSON))
         .andDo(print()).andExpect(status().isOk());
 

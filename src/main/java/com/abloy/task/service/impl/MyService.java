@@ -22,7 +22,7 @@ public class MyService implements IMovieService {
   public static final Logger LOGGER = LogManager.getLogger(MyService.class);
 
   @Override
-  public List<Movie> suggest(String genre) {
+  public List<Movie> suggest(long userId) {
     List<Movie> movies = new ArrayList<>();
     try {
       File file = ResourceUtils.getFile("classpath:movies.json");
