@@ -23,6 +23,8 @@ public class MyService implements IMovieService {
 
   @Override
   public List<Movie> suggest(long userId) {
+    // TODO: Find user base on userId and get movie preferences
+
     List<Movie> movies = new ArrayList<>();
     try {
       File file = ResourceUtils.getFile("classpath:movies.json");
